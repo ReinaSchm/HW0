@@ -156,12 +156,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>import pandas as pd url = “https://raw.githubusercontent.com/pic16b-ucla/24W/main/datasets/palmer_penguins.csv” penguins = pd.read_csv(url)</p>
-<p>import plotly.express as px import plotly.graph_objects as go import plotly.io as pio import seaborn as sns from matplotlib import pyplot as plt</p>
-<p>fig1 = px.scatter(penguins[penguins[‘Species’] == ‘Adelie Penguin (Pygoscelis adeliae)’], x = “Flipper Length (mm)”, y = “Culmen Length (mm)”, color = “Species”, color_discrete_sequence=[“orange”], ) fig1.update_traces( marker = dict(symbol = “circle”), name = “Adelie”)</p>
-<p>fig2 = px.scatter(penguins[~penguins[‘Species’].isin([‘Adelie Penguin (Pygoscelis adeliae)’,‘Gentoo penguin (Pygoscelis papua)’])], x = “Flipper Length (mm)”, y = “Culmen Length (mm)”, color = “Species”, color_discrete_sequence=[“purple”]) fig2.update_traces( marker = dict(symbol = “triangle-up”), name = “Chinstrap”)</p>
-<p>fig3 = px.scatter(penguins[penguins[‘Species’] == ‘Gentoo penguin (Pygoscelis papua)’], x = “Flipper Length (mm)”, y = “Culmen Length (mm)”, color = “Species”, color_discrete_sequence=[“blue”]) fig3.update_traces( marker = dict(symbol = “square”), name = “Gentroo”)</p>
-<p>fig4 = go.Figure(data=fig1.data + fig2.data + fig3.data) fig4.update_layout(title_text=f”Flipper and bill length of Adelie, Chinstrap and Gentoo Penguins at Palmer Station”, xaxis_title=“Flipper Length (mm)”, yaxis_title=“Bill length (mm)”) fig4.show()</p>
+<p><img src="newplot.jpg" class="img-fluid"></p>
 
 
 
