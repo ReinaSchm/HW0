@@ -155,6 +155,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>This is the first post in a Quarto blog. Welcome!</p>
+<p>My name is Reina Schmoock, and I’m a third year Applied Math major :)</p>
 <p><img src="thumbnail.jpg" class="img-fluid"></p>
 <p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
 
@@ -251,7 +252,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/ReinaSchm\.github\.io\/HW0\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
